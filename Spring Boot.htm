@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en-US"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script id="undefined" src="Spring%20Boot_files/inpage_linkid.js" async="" type="text/javascript"></script>
+<title>Spring Boot</title>
+<link rel="icon" type="image/png" href="https://projects.spring.io/spring-boot/favicon.png">
+<link rel="stylesheet" type="text/css" href="Spring%20Boot_files/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="Spring%20Boot_files/css.css">
+<link rel="stylesheet" type="text/css" href="Spring%20Boot_files/font-awesome.css">
+<link rel="stylesheet" type="text/css" href="Spring%20Boot_files/bootstrap-select.css">
+<link rel="stylesheet" type="text/css" href="Spring%20Boot_files/main.css">
+<link rel="stylesheet" type="text/css" href="Spring%20Boot_files/typography.css">
+<link rel="stylesheet" type="text/css" href="Spring%20Boot_files/icons.css">
+<link rel="stylesheet" type="text/css" href="Spring%20Boot_files/projects.css">
+<link rel="stylesheet" type="text/css" href="Spring%20Boot_files/buttons.css">
+<link rel="stylesheet" type="text/css" href="Spring%20Boot_files/guide.css">
+<link rel="stylesheet" type="text/css" href="Spring%20Boot_files/highlight.css">
+<script src="Spring%20Boot_files/ga.js" async="" type="text/javascript"></script><script src="Spring%20Boot_files/jquery.js"></script>
+<script src="Spring%20Boot_files/bootstrap.js"></script>
+<script src="Spring%20Boot_files/bootstrap-select.js"></script>
+<script src="Spring%20Boot_files/underscore.js"></script>
+<script src="Spring%20Boot_files/backbone.js"></script>
+<script src="Spring%20Boot_files/projectDocumentationWidget.js"></script>
+<script src="Spring%20Boot_files/application.js"></script>
+<script src="Spring%20Boot_files/clipboard.js"></script>
+<script>
+        var apiBaseUrl  = "https://spring.io",
+            projectId   = "spring-boot",
+            siteBaseUrl = "/spring-boot";
+    </script>
+<script src="Spring%20Boot_files/copySnippets.js"></script>
+<meta name="google-site-verification" content="7qGntFPD9lWAVCtUu5U77v4l68PsTHf6xpzgjQv2j2M">
+<script>
+        var _gaq = _gaq || [];
+        var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+        _gaq.push(
+            ['_require', 'inpage_linkid', pluginUrl],
+            ['_setAccount', 'UA-2728886-22'],
+            ['_trackPageview'],
+            ['b._require', 'inpage_linkid', pluginUrl],
+            ['b._setAccount', 'UA-2728886-19'],
+            ['b._trackPageview']
+        );
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body>
+<header class="navbar header--navbar">
+<div class="navbar-inner">
+<div class="container-fluid">
+<div class="spring-logo--container">
+<a class="spring-logo" href="https://spring.io/"><span></span></a>
+</div>
+<ul class="nav pull-right">
+<li class="navbar-link"><a href="https://spring.io/docs">Docs</a>
+</li>
+<li class="navbar-link"><a href="https://spring.io/guides">Guides</a></li>
+<li class="navbar-link active"><a href="https://spring.io/projects">Projects</a></li>
+<li class="navbar-link"><a href="https://spring.io/blog">Blog</a>
+</li>
+<li class="navbar-link"><a href="https://spring.io/questions">Questions</a>
+</li>
+<li class="navbar-link nav-search"><i class="icon-search navbar-search--icon js-search-input-open"></i>
+<div class="search-input-close js-search-input-close">x</div></li>
+</ul>
+</div>
+</div>
+<div class="search-dropdown--container js-search-dropdown">
+<div class="container-fluid">
+<div class="search-form--container">
+<form class="form-inline form-search" action="https://spring.io/search">
+<input class="search-query search-form--form js-search-input" placeholder="Search for documention, guides, and posts..." name="q" type="search">
+<button class="search-form--submit">
+<i class="icon-search"></i>
+</button>
+</form>
+</div>
+</div>
+</div>
+</header>
+<div class="body--container">
+<div class="billboard--wrapper project-header--wrapper">
+<div class="billboard--container">
+<div class="project-icon">
+</div>
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="span8 billboard--area">
+<div class="content--title">
+<p><a href="https://projects.spring.io/">Projects</a></p>
+</div>
+<div class="project--title">Spring Boot
+<div class="project--links--container">
+<a href="https://github.com/spring-projects/spring-boot" class="project-link">
+<i class="icon-github"></i>
+</a>
+</div>
+</div>
+<div class="project--description">
+<p>Takes an opinionated view of building production-ready Spring 
+applications. Spring Boot favors convention over configuration and is 
+designed to get you up and running as quickly as possible.</p>
+</div>
+<a class="btn btn-black uppercase project-quickstart-btn" href="#quick-start">Quick Start</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="github-fork-ribbon--container">
+<a href="https://github.com/spring-projects/spring-boot"><img style="position: absolute; top: 0; right: 0; border: 0;" src="Spring%20Boot_files/forkme.png" alt="Fork me on GitHub"></a>
+</div>
+<div class="project-body--wrapper">
+<div class="project-body--container">
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="span8">
+<div class="project-body--section">
+<p>Spring Boot makes it easy to create stand-alone, production-grade 
+Spring based Applications that you can "just run". We take an 
+opinionated view of the Spring platform and third-party libraries so you
+ can get started with minimum fuss. Most Spring Boot applications need 
+very little Spring configuration.</p>
+<h2 id="features">Features</h2>
+<ul>
+<li>Create stand-alone Spring applications</li>
+<li>Embed Tomcat, Jetty or Undertow directly (no need to deploy WAR files)</li>
+<li>Provide opinionated 'starter' POMs to simplify your Maven configuration</li>
+<li>Automatically configure Spring whenever possible</li>
+<li>Provide production-ready features such as metrics, health checks and externalized configuration</li>
+<li>Absolutely <strong>no code generation</strong> and <strong>no requirement for XML</strong> configuration</li>
+</ul>
+<p>The <a href="https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle">reference guide</a> includes detailed descriptions of all the features, plus an extensive <a href="https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#howto">howto</a> for common use cases.</p>
+<p><span id="quick-start"></span></p>
+<h2 id="quick-start">Quick Start</h2>
+<p>If you are Java developer you can use <a href="https://start.spring.io/">start.spring.io</a> to generate a basic project, follow the "Quick Start" example below, or read the reference documentation <a href="https://docs.spring.io/spring-boot/docs/current-SNAPSHOT/reference/htmlsingle/#getting-started">getting started</a> guide.</p>
+<div id="download-widget">
+<div class="row-fluid download-widget--container">
+<div class="download-widget--header js-item-dropdown-widget--wrapper">
+<div class="download-widget--title">
+Download
+</div>
+<div data-download-widget-controls="" style="display: inline-block">
+    <div class="js-download-widget-selector">
+        <select style="display: none;" class="selector selectpicker">
+            
+            <option value="0" data-content="
+                        &lt;span&gt;2.0.0 M3&lt;/span&gt;
+                        
+                        &lt;div class='spring-icon spring-icon-pre-release'&gt;&lt;/div&gt;" data-current="false">
+                ()
+            </option>
+            
+            <option value="1" data-content="
+                        &lt;span&gt;2.0.0&lt;/span&gt;
+                        
+                        &lt;div class='spring-icon spring-icon-snapshot-release'&gt;&lt;/div&gt;" data-current="false">
+                ()
+            </option>
+            
+            <option value="2" data-content="
+                        &lt;span&gt;1.5.7&lt;/span&gt;
+                        
+                        &lt;div class='spring-icon spring-icon-snapshot-release'&gt;&lt;/div&gt;" data-current="false">
+                ()
+            </option>
+            
+            <option selected="selected" value="3" data-content="
+                        &lt;span&gt;1.5.6&lt;/span&gt;
+                        
+                            &lt;div class='spring-icon spring-icon-current-version'&gt;&lt;/div&gt;
+                        
+                        &lt;div class='spring-icon spring-icon-ga-release'&gt;&lt;/div&gt;" data-current="true">
+                ()
+            </option>
+            
+            <option value="4" data-content="
+                        &lt;span&gt;1.4.7&lt;/span&gt;
+                        
+                        &lt;div class='spring-icon spring-icon-ga-release'&gt;&lt;/div&gt;" data-current="false">
+                ()
+            </option>
+            
+        </select><div class="btn-group bootstrap-select selector"><button type="button" class="dropdown-toggle" data-toggle="dropdown"><div class="item-dropdown--icon icon-reorder pull-right"></div><div class="filter-option pull-left">
+                        <span>1.5.6</span>
+                        
+                            <div class="spring-icon spring-icon-current-version"></div>
+                        
+                        <div class="spring-icon spring-icon-ga-release"></div></div>&nbsp;</button><div class="dropdown-menu open"><ul class="dropdown-menu inner" role="menu"><li rel="0"><a tabindex="0" class="" style="">
+                        <span>2.0.0 M3</span>
+                        
+                        <div class="spring-icon spring-icon-pre-release"></div><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="1"><a tabindex="0" class="" style="">
+                        <span>2.0.0</span>
+                        
+                        <div class="spring-icon spring-icon-snapshot-release"></div><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="2"><a tabindex="0" class="" style="">
+                        <span>1.5.7</span>
+                        
+                        <div class="spring-icon spring-icon-snapshot-release"></div><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li class="selected" rel="3"><a tabindex="0" class="" style="">
+                        <span>1.5.6</span>
+                        
+                            <div class="spring-icon spring-icon-current-version"></div>
+                        
+                        <div class="spring-icon spring-icon-ga-release"></div><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li><li rel="4"><a tabindex="0" class="" style="">
+                        <span>1.4.7</span>
+                        
+                        <div class="spring-icon spring-icon-ga-release"></div><i class="glyphicon glyphicon-ok icon-ok check-mark"></i></a></li></ul></div></div>
+    </div>
+
+    <div class="item-slider-widget js-item-slider--wrapper">
+        <div class="item-slider--container">
+            <div class="item--slider js-item--slider"></div>
+            <div class="item js-active js-item" data-snippet-type="maven">
+                Maven
+            </div>
+            <div class="item js-item" data-snippet-type="gradle">
+                Gradle
+            </div>
+        </div>
+    </div>
+
+</div>
+</div>
+<div class="download-widget--body">
+<p>The recommended way to get started using <code>spring-boot</code> in
+your project is with a dependency management system – the snippet below can
+be copied and pasted into your build. Need help? See our getting started guides
+on building with <a href="https://spring.io/guides/gs/maven/">Maven</a> and
+<a href="https://spring.io/guides/gs/gradle/">Gradle</a>.
+</p>
+<div class="js-download-maven-widget"><div class="highlight"><button class="copy-button snippet" id="copy-button-snippet" data-clipboard-target="#code-block-snippet"></button><pre id="code-block-snippet"><code><span class="nt">&lt;parent&gt;</span>
+    <span class="nt">&lt;groupId&gt;</span>org.springframework.boot<span class="nt">&lt;/groupId&gt;</span>
+    <span class="nt">&lt;artifactId&gt;</span>spring-boot-starter-parent<span class="nt">&lt;/artifactId&gt;</span>
+    <span class="nt">&lt;version&gt;</span>1.5.6.RELEASE<span class="nt">&lt;/version&gt;</span>
+<span class="nt">&lt;/parent&gt;</span>
+<span class="nt">&lt;dependencies&gt;</span>
+    <span class="nt">&lt;dependency&gt;</span>
+        <span class="nt">&lt;groupId&gt;</span>org.springframework.boot<span class="nt">&lt;/groupId&gt;</span>
+        <span class="nt">&lt;artifactId&gt;</span>spring-boot-starter-web<span class="nt">&lt;/artifactId&gt;</span>
+    <span class="nt">&lt;/dependency&gt;</span>
+<span class="nt">&lt;/dependencies&gt;</span></code></pre></div></div>
+</div>
+</div>
+</div>
+<p><br>
+<code class="highlighter-rouge">hello/SampleController.java</code></p>
+<div class="language-java highlighter-rouge"><button class="copy-button snippet" id="copy-button-0" data-clipboard-target="#code-block-0"></button><pre id="code-block-0" class="highlight"><code><span class="kn">package</span> <span class="n">hello</span><span class="o">;</span>
+
+<span class="kn">import</span> <span class="nn">org.springframework.boot.*</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.springframework.boot.autoconfigure.*</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.springframework.stereotype.*</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">org.springframework.web.bind.annotation.*</span><span class="o">;</span>
+
+<span class="nd">@Controller</span>
+<span class="nd">@EnableAutoConfiguration</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">SampleController</span> <span class="o">{</span>
+
+    <span class="nd">@RequestMapping</span><span class="o">(</span><span class="s">"/"</span><span class="o">)</span>
+    <span class="nd">@ResponseBody</span>
+    <span class="n">String</span> <span class="nf">home</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="s">"Hello World!"</span><span class="o">;</span>
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="kd">throws</span> <span class="n">Exception</span> <span class="o">{</span>
+        <span class="n">SpringApplication</span><span class="o">.</span><span class="na">run</span><span class="o">(</span><span class="n">SampleController</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="n">args</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre>
+</div>
+<h2 id="spring-boot-cli">Spring Boot CLI</h2>
+<p>Spring Boot ships with a command line tool that can be used if you 
+want to quickly prototype with Spring. It allows you to run Groovy 
+scripts, which means that you have a familiar Java-like syntax, without 
+so much boilerplate code. Follow the instructions in our main 
+documentation if you want to <a href="https://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#getting-started-installing-the-cli">install the Spring Boot CLI</a>.</p>
+</div>
+</div>
+<div class="span4">
+<div class="js-documentation-widget">
+    <div class="right-pane-widget--container no-top-border project-documentation--container">
+        <div class="item-dropdown-widget">
+            <div class="item-dropdown--title">Spring Boot</div>
+            <div class="item--dropdown">
+                <div class="item--body">
+                    <div class="item--body-title">
+                        <div class="item--left-column">Release</div>
+                        <div class="item--right-column">Documentation</div>
+                    </div>
+                    
+                    <div class="item--body--version">
+                        <div class="item--left-column">
+                            <p>2.0.0 M3</p>
+                            
+                            <div class="spring-icon spring-icon-pre-release"></div>
+                        </div>
+                        <div class="item--right-column">
+                            
+                                <a href="http://docs.spring.io/spring-boot/docs/2.0.0.M3/reference/htmlsingle/" class="docs-link reference-link">Reference</a>
+                            
+                            
+                                <a href="http://docs.spring.io/spring-boot/docs/2.0.0.M3/api/" class="docs-link api-link">API</a>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="item--body--version">
+                        <div class="item--left-column">
+                            <p>2.0.0</p>
+                            
+                            <div class="spring-icon spring-icon-snapshot-release"></div>
+                        </div>
+                        <div class="item--right-column">
+                            
+                                <a href="http://docs.spring.io/spring-boot/docs/2.0.0.BUILD-SNAPSHOT/reference/htmlsingle/" class="docs-link reference-link">Reference</a>
+                            
+                            
+                                <a href="http://docs.spring.io/spring-boot/docs/2.0.0.BUILD-SNAPSHOT/api/" class="docs-link api-link">API</a>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="item--body--version">
+                        <div class="item--left-column">
+                            <p>1.5.7</p>
+                            
+                            <div class="spring-icon spring-icon-snapshot-release"></div>
+                        </div>
+                        <div class="item--right-column">
+                            
+                                <a href="http://docs.spring.io/spring-boot/docs/1.5.7.BUILD-SNAPSHOT/reference/htmlsingle/" class="docs-link reference-link">Reference</a>
+                            
+                            
+                                <a href="http://docs.spring.io/spring-boot/docs/1.5.7.BUILD-SNAPSHOT/api/" class="docs-link api-link">API</a>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="item--body--version">
+                        <div class="item--left-column">
+                            <p>1.5.6</p>
+                            
+                                <div class="spring-icon spring-icon-current-version"></div>
+                            
+                            <div class="spring-icon spring-icon-ga-release"></div>
+                        </div>
+                        <div class="item--right-column">
+                            
+                                <a href="http://docs.spring.io/spring-boot/docs/1.5.6.RELEASE/reference/htmlsingle/" class="docs-link reference-link">Reference</a>
+                            
+                            
+                                <a href="http://docs.spring.io/spring-boot/docs/1.5.6.RELEASE/api/" class="docs-link api-link">API</a>
+                            
+                        </div>
+                    </div>
+                    
+                    <div class="item--body--version">
+                        <div class="item--left-column">
+                            <p>1.4.7</p>
+                            
+                            <div class="spring-icon spring-icon-ga-release"></div>
+                        </div>
+                        <div class="item--right-column">
+                            
+                                <a href="http://docs.spring.io/spring-boot/docs/1.4.7.RELEASE/reference/htmlsingle/" class="docs-link reference-link">Reference</a>
+                            
+                            
+                                <a href="http://docs.spring.io/spring-boot/docs/1.4.7.RELEASE/api/" class="docs-link api-link">API</a>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="right-pane-widget--container no-top-border">
+<div class="project-sub-link--wrapper">
+<div class="project-sub-link">
+<a href="https://twitter.com/springboot">
+<div class="spring-icon project-badges twitter" title="Twitter">
+</div>
+</a>
+</div>
+<div class="project-sub-link">
+<a href="https://github.com/spring-projects/spring-boot">
+<div class="spring-icon project-badges github" title="Source (GitHub)">
+</div>
+</a>
+</div>
+<div class="project-sub-link">
+<a href="https://github.com/spring-projects/spring-boot/issues">
+<div class="spring-icon project-badges tracking" title="Issues (GitHub)">
+</div>
+</a>
+</div>
+<div class="project-sub-link">
+<a href="https://build.springsource.org/browse/BOOT">
+<div class="spring-icon project-badges ci" title="CI (Bamboo)">
+</div>
+</a>
+</div>
+<div class="project-sub-link">
+<a href="https://stackoverflow.com/questions/tagged/spring-boot">
+<div class="spring-icon project-badges stackoverflow" title="StackOverflow">
+</div>
+</a>
+</div>
+</div>
+</div>
+<div class="right-pane-widget--container no-top-border project-sidebar-resource--wrapper">
+<h3 id="sample-projects">Sample Projects</h3>
+<ul>
+<li><a href="https://github.com/spring-projects/spring-boot/tree/master/spring-boot-samples/spring-boot-sample-simple">Simple</a></li>
+<li><a href="https://github.com/spring-projects/spring-boot/tree/master/spring-boot-samples/spring-boot-sample-tomcat">Embedded Tomcat</a></li>
+<li><a href="https://github.com/spring-projects/spring-boot/tree/master/spring-boot-samples/spring-boot-sample-batch">Batch</a></li>
+<li><a href="https://github.com/spring-projects/spring-boot/tree/master/spring-boot-samples/spring-boot-sample-data-jpa">Data JPA</a></li>
+<li><a href="https://github.com/spring-projects/spring-boot/tree/master/spring-boot-samples/spring-boot-sample-integration">Integration</a></li>
+<li><a href="https://github.com/spring-projects/spring-boot/tree/master/spring-boot-samples">more…</a></li>
+</ul>
+<h3 id="getting-started-guides">Getting Started Guides</h3>
+<ul>
+<li><a href="https://spring.io/guides/gs/spring-boot">Building an Application with Spring Boot</a></li>
+<li><a href="https://spring.io/guides/gs/rest-service">Building a RESTful Web Service</a></li>
+<li><a href="https://spring.io/guides/gs/serving-web-content">Serving Web Content</a></li>
+<li><a href="https://spring.io/guides/gs/convert-jar-to-war">Converting a Spring Boot JAR Application to a WAR</a></li>
+</ul>
+<h3 id="external-links">External Links</h3>
+<ul>
+<li><a href="https://spring.io/blog/2016/12/14/spring-tips-demystifying-bootiful-magic">Spring Tips: Demystifying Bootiful Magic</a></li>
+<li><a href="https://youtu.be/uof5h-j0IeE">It's a kind of magic: under the covers of Spring Boot</a></li>
+<li><a href="https://www.infoq.com/spring-boot/">Presentations on InfoQ</a></li>
+<li><a href="https://youtu.be/7cemYpV1fNI">Spring Boot for the web tier</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="footer">
+<div class="container-fluid">
+<div class="row-fluid">
+<div class="span8">
+<div class="navbar">
+<div class="container">
+<ul class="nav">
+<li><a href="https://spring.io/team">Team</a></li>
+<li><a href="https://spring.io/services">Services</a></li>
+<li><a href="https://spring.io/tools">Tools</a></li>
+</ul>
+</div>
+</div>
+© <script> var d = new Date();
+                    document.write(d.getFullYear());</script>2017 <a href="https://www.pivotal.io/">Pivotal Software</a>, Inc. All Rights Reserved.
+<a href="https://pivotal.io/terms-of-use">Terms of Use</a> and
+<a href="https://pivotal.io/privacy-policy">Privacy</a>
+</div>
+</div>
+</div>
+</footer>
+<div id="scrim"></div>
+<script type="text/html" id="project-documentation-widget-template">
+    <div class="right-pane-widget--container no-top-border project-documentation--container">
+        <div class="item-dropdown-widget">
+            <div class="item-dropdown--title">{@= name @}</div>
+            <div class="item--dropdown">
+                <div class="item--body">
+                    <div class="item--body-title">
+                        <div class="item--left-column">Release</div>
+                        <div class="item--right-column">Documentation</div>
+                    </div>
+                    {@ _.each(releases, function(release) { @}
+                    <div class="item--body--version">
+                        <div class="item--left-column">
+                            <p>{@= release.versionDisplayName @}</p>
+                            {@ if(release.current) { @}
+                                <div class="spring-icon spring-icon-current-version"></div>
+                            {@ } @}
+                            <div class="spring-icon {@= release.statusIconClass() @}"></div>
+                        </div>
+                        <div class="item--right-column">
+                            {@ if (release.refDocUrl !== '') { @}
+                                <a href='{@= release.refDocUrl @}' class="docs-link reference-link">Reference</a>
+                            {@ }; @}
+                            {@ if (release.apiDocUrl !== '') { @}
+                                <a href='{@= release.apiDocUrl @}' class="docs-link api-link">API</a>
+                            {@ }; @}
+                        </div>
+                    </div>
+                    {@ }); @}
+                </div>
+            </div>
+        </div>
+    </div>
+</script>
+<script type="text/html" id="project-download-widget-controls-template">
+    <div class="js-download-widget-selector">
+        <select class='selector selectpicker'>
+            {@ _.each(releases, function(release, index) { @}
+            <option value="{@= index @}"
+                    data-content="
+                        <span>{@= release.versionDisplayName @}</span>
+                        {@ if(release.current) { @}
+                            <div class='spring-icon spring-icon-current-version'></div>
+                        {@ } @}
+                        <div class='spring-icon {@= release.statusIconClass() @}'/>"
+                    data-current="{@= release.current @}">
+                ()
+            </option>
+            {@ }); @}
+        </select>
+    </div>
+
+    <div class="item-slider-widget js-item-slider--wrapper">
+        <div class="item-slider--container">
+            <div class="item--slider js-item--slider"></div>
+            <div class="item js-active js-item" data-snippet-type='maven'>
+                Maven
+            </div>
+            <div class="item js-item" data-snippet-type='gradle'>
+                Gradle
+            </div>
+        </div>
+    </div>
+
+</script>
+<script type="text/html" id="project-download-maven-widget-template">
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;parent&gt;</span>
+    <span class="nt">&lt;groupId&gt;</span>{@= groupId @}<span class="nt">&lt;/groupId&gt;</span>
+    <span class="nt">&lt;artifactId&gt;</span>spring-boot-starter-parent<span class="nt">&lt;/artifactId&gt;</span>
+    <span class="nt">&lt;version&gt;</span>{@= version @}<span class="nt">&lt;/version&gt;</span>
+<span class="nt">&lt;/parent&gt;</span>
+<span class="nt">&lt;dependencies&gt;</span>
+    <span class="nt">&lt;dependency&gt;</span>
+        <span class="nt">&lt;groupId&gt;</span>{@= groupId @}<span class="nt">&lt;/groupId&gt;</span>
+        <span class="nt">&lt;artifactId&gt;</span>spring-boot-starter-web<span class="nt">&lt;/artifactId&gt;</span>
+    <span class="nt">&lt;/dependency&gt;</span>
+<span class="nt">&lt;/dependencies&gt;</span></code></pre></figure>
+</script>
+<script type="text/html" id="project-repository-maven-widget-template">
+<figure class="highlight"><pre><code class="language-xml" data-lang="xml"><span class="nt">&lt;repositories&gt;</span>
+    <span class="nt">&lt;repository&gt;</span>
+        <span class="nt">&lt;id&gt;</span>{@= repository.id @}<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;name&gt;</span>{@= repository.name @}<span class="nt">&lt;/name&gt;</span>
+        <span class="nt">&lt;url&gt;</span>{@= repository.url @}<span class="nt">&lt;/url&gt;</span>
+        <span class="nt">&lt;snapshots&gt;</span>
+            <span class="nt">&lt;enabled&gt;</span>{@= repository.snapshotsEnabled @}<span class="nt">&lt;/enabled&gt;</span>
+        <span class="nt">&lt;/snapshots&gt;</span>
+    <span class="nt">&lt;/repository&gt;</span>
+<span class="nt">&lt;/repositories&gt;</span></code></pre></figure>
+</script>
+<script type="text/html" id="project-download-gradle-widget-template">
+<figure class="highlight"><pre><code class="language-groovy" data-lang="groovy"><span class="n">dependencies</span> <span class="o">{</span>
+    <span class="n">compile</span><span class="o">(</span><span class="s2">"{@= groupId @}:spring-boot-starter-web:{@= version @}"</span><span class="o">)</span>
+<span class="o">}</span></code></pre></figure>
+</script>
+<script type="text/html" id="project-repository-gradle-widget-template">
+<figure class="highlight"><pre><code class="language-groovy" data-lang="groovy"><span class="n">repositories</span> <span class="o">{</span>
+    <span class="n">maven</span> <span class="o">{</span>
+        <span class="n">url</span> <span class="s1">'{@= repository.url @}'</span>
+    <span class="o">}</span>
+<span class="o">}</span></code></pre></figure>
+</script>
+<script type="text/html" id="project-download-zip-widget-template">
+This is a zip url
+</script>
+
+
+</body></html>
